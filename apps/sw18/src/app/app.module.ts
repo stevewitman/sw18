@@ -7,13 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { CoreStateModule } from '@bb/core-state';
+import { CoreDataModule } from '@bb/core-data';
+import { MaterialModule } from '@bb/material';
+import { UiToolbarModule } from '@bb/ui-toolbar';
 
 @NgModule({
   declarations: [AppComponent, ProjectsComponent, ProjectsListComponent, ProjectDetailsComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CoreStateModule,
+    CoreDataModule,
+    MaterialModule,
+    UiToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
