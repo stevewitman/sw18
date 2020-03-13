@@ -10,6 +10,7 @@ import { CoreStateModule } from '@bb/core-state';
 import { CoreDataModule } from '@bb/core-data';
 import { MaterialModule } from '@bb/material';
 import { UiToolbarModule } from '@bb/ui-toolbar';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, ProjectsComponent, ProjectsListComponent, ProjectDetailsComponent],
@@ -19,7 +20,8 @@ import { UiToolbarModule } from '@bb/ui-toolbar';
     CoreStateModule,
     CoreDataModule,
     MaterialModule,
-    UiToolbarModule
+    UiToolbarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
